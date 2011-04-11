@@ -1,6 +1,6 @@
 cloudbees-node
 
-This is a quick and diry bash script that verifies wether you have Node.js
+This is a quick and dirty bash script that verifies whether you have Node.js
 and npm installed and available in your Cloudbees' Jenkins project (cloudbees.com)
 and install them if not.
 
