@@ -22,5 +22,8 @@ and install them if not.
     # trigger the tests
   - (...)
 
+* Note: The first time it runs it'll take some time to clone and install node and npm.
+  The subsequent builds these steps are skipped.
+
 ** You are more than welcome to improve this script! **
 
