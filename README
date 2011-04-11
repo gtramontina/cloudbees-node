@@ -12,6 +12,9 @@ and install them if not.
   - It is pre-configured to clone the latest Node.js github version into /build/node
     and install it under /build/node/installed.
 
+  - Configure your CI instance (Configure / Build / Execute shell) to run the following line (without quotes):
+    "bash build/start.sh"
+
 * Future improvements:
   - Read project's package.json to:
     # find out which Node.js version to clone/install
