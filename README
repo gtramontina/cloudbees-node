@@ -1,0 +1,23 @@
+cloudbees-node
+
+This is a quick and diry bash script that verifies wether you have Node.js
+and npm installed and available in your Cloudbees' Jenkins project (cloudbees.com)
+and install them if not.
+
+* Here's how it is currently working:
+  - My Jenkins project has the following structure:
+    /build - where this script and other build scripts live
+    /project - where everything else related to my project live
+
+  - It is pre-configured to clone the latest Node.js github version into /build/node
+    and install it under /build/node/installed.
+
+* Future improvements:
+  - Read project's package.json to:
+    # find out which Node.js version to clone/install
+    # find out which test dependencies to install
+    # trigger the tests
+  - (...)
+
+** You are more than welcome to improve this script! **
+
