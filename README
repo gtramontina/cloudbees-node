@@ -15,7 +15,7 @@ and install them if not.
   - Configure your CI instance (Configure / Build / Execute shell) to run the following line (without quotes):
     "source build/start.sh"
     -> I didn't realize that the variables exported by the script are not available outside its context (i.e.
-       another scripts). Besides that it seems that cloudbees' .bashrc gets reverted every time a new build
+       other scripts). Besides that it seems that cloudbees' .bashrc gets reverted every time a new build
        is triggered, so echoing the export to .bashrc doesn't solve this issue.
        It might not be the best solution, but using 'source' instead of 'bash' does the trick.
        ** Please let me know if there is a more elegant way!**
