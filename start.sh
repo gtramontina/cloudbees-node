@@ -11,8 +11,8 @@ clone_node_from_github() {
 }
 install_node() {
     mkdir $NODE_INSTALL_DIR
-    export PREFIX=$PWD/$NODE_INSTALL_DIR
-    pushd $NODE_SOURCE_DIR; ./configure
+    pushd $NODE_SOURCE_DIR
+    ./configure --prefix=$PWD/$NODE_INSTALL_DIR
     make install
     popd
 }
@@ -23,7 +23,7 @@ add_node_to_path() {
     export PATH=$PWD/$NODE_INSTALL_DIR/bin:${PATH}
 }
 install_npm() {
-    curl http://npmjs.org/install.sh | sh
+    curl http://npmjs.org/install.sh | clean=yes sh
 }
 
 # [ Start! ]
